@@ -1,0 +1,133 @@
+@keyframes fade-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: "SfPro";
+  src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+/* @font-face {
+  font-family: ;
+  src: url(../fonts/);
+} */
+
+@font-face {
+  font-family: "San-Francisco";
+  src: url(../fonts/FontsFree-Net-SFProText-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #1d1d1f;
+  overflow-y: hidden;
+}
+
+nav > a {
+  font-weight: 300;
+  letter-spacing: 0.6px;
+}
+
+#searchBar {
+  animation: fade-out 0.8s ease;
+  z-index: 6;
+}
+
+#headerInner {
+  animation: fade-out 0.8s ease;
+}
+
+#intro {
+  font-family: "SfPro", sans-serif;
+}
+
+#wrapper {
+  background-color: #352336;
+  font-family: "SfPro", sans-serif;
+}
+
+footer {
+  color: #86868b;
+}
+
+#footerNav > a {
+  border-right: 1px solid #424245;
+  font-family: "San-Francisco", sans-serif;
+}
+
+hr {
+  border-color: #424245;
+}
+
+#footerNav > a:last-child {
+  border-right: none;
+}
+
+#USA {
+  font-family: "San-Francisco", sans-serif;
+}
+
+#copyParagraph {
+  font-weight: 400;
+  font-family: "SfPro", sans-serif;
+}
+
+#moreInfo > p {
+  font-family: "SfPro", sans-serif;
+}
+
+.ehSpan {
+  color: #2997ff;
+  font-family: "SfPro", sans-serif;
+}
+
+h1 {
+  font-family: "San-Francisco", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.navigation > a {
+  font-family: "San-Francisco", sans-serif;
+}
+
+#searchInp {
+  border: none;
+  font-family: "SfPro", sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+#searchInp:focus {
+  outline: none;
+}
+#searchInp::placeholder {
+  font-size: 14px;
+  color: white;
+  opacity: 0.8;
+}
+
+#searchBar::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  position: absolute;
+}
+
+#mobileHeader {
+  background-color: #1d1d1f;
+}
